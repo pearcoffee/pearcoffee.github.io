@@ -6,4 +6,4 @@ Desenvolvemos projetos web customizados de acordo com seu negócio, **tudo feito
 
 Acesse nosso site :)
 
-www.pearcoffe.io
+www.pearcoffee.io
