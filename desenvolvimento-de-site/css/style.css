@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+body{margin: 0; padding: 0; font-family: 'Open Sans', sans-serif;}
+h1{font-weight: 100; font-size: 4em;}
+h2{font-weight: 100; font-size: 3em;}
+h2::after{content: ""; display: block; margin: 10px auto; width: 88px; height: 2px; background: #000; z-index: 100; position: relative;}
+h3{font-weight: 100; font-size: 2em;}
+p{width: 100%; margin: 0 auto; font-size: 1.9em; font-weight: 300;}
+span{font-weight: 700;}
+
+/*Botões*/
+.btn-grande{display: block; max-width: 360px; width: 100%; height: 78px; border: 2px solid #b2cb59; border-radius: 5px; background: transparent; margin: 420px auto 0 auto; text-align: center; font-size: 23px; color: #b2cb59; -webkit-transition: 0.2s ease; -o-transition: 0.2s ease; transition: 0.2s ease;}
+.btn-grande:hover{background: #b2cb59; color: #fff;}
+
+/*Skils*/
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+/*Chamada da Home*/
+.chamada-home{position: relative; background: center url('../img/bg-pearcoffee-oferta.jpg') #fff no-repeat; background-position-y: 57px; height: 800px; text-align: center;}
+.chamada-home img{margin: 30px;}
+.chamada-home p{max-width: 540px; font-size: 1.9em;}
+.chamada-home .video {position: absolute; width: 440px; height: 302px; background: #b2cb59; left: 50%; top: 0; margin: 358px 0 0 -222px;}
+
+/*Chamada Destaque*/
+.chamada-destaque{text-align: center; min-height: 450px; margin: 35px 0;}
+.chamada-destaque p{font-size: 1em;}
+.bg-verde{background: #b2cb59;}
+.bg-branco{background: #fff;}
+.bg-preto{background: url('../img/bg-escolha-seu-lado.jpg'); color: #fff;}
