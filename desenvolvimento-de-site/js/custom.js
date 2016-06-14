@@ -14,7 +14,7 @@ jQuery(function () {
 
 }());
 
-var mauticUrl = 'https://williandutras.mautic.net/';
+var mauticUrl = 'https://williandutras.mautic.net';
 var src = mauticUrl + '/mtracking.gif?page_url=' + encodeURIComponent(window.location.href) + '&page_title=' + encodeURIComponent(document.title);
 var img = document.createElement('img');
 img.style.width  = '1px';
