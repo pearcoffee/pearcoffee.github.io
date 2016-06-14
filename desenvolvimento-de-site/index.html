@@ -44,6 +44,40 @@
     <title>Desenvolvimento de Site, Loja Virtual, Consultoria em SEO, Redes Sociais</title>
   </head>
   <body>
+    <div id="formulario">
+      <div class="container">
+        <h2>Vamos criar seu site?</h2>
+        <p style="font-size: 1.9em;">
+          <span>Sem compromisso</span> algum, preenche os dados abaixo que faremos o possível para te ajudar. Não se preocupe com spam, também odiamos isto :)
+        </p>
+        <br>
+        <div id="mauticform_wrapper_queromeusiteagora" class="mauticform_wrapper">
+            <form autocomplete="false" role="form" method="post" action="https://williandutras.mautic.net/form/submit?formId=1" id="mauticform_queromeusiteagora" data-mautic-form="queromeusiteagora">
+                <div class="mauticform-error" id="mauticform_queromeusiteagora_error"></div>
+                <div class="mauticform-message" id="mauticform_queromeusiteagora_message"></div>
+                <div class="mauticform-innerform">
+                    <div id="mauticform_queromeusiteagora_seu_nome"  data-validate="seu_nome" data-validation-type="email" class="mauticform-row mauticform-email mauticform-required">
+                        <input id="mauticform_input_queromeusiteagora_seu_nome" name="mauticform[seu_nome]" value="" class="mauticform-input" placeholder="Seu Nome" type="name" />
+                        <br>
+                        <span class="mauticform-errormsg" style="display: none;">Por favor, insira um nome.</span>
+                    </div>
+
+                    <div id="mauticform_queromeusiteagora_insira_seu_email"  data-validate="insira_seu_email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-required">
+                        <input id="mauticform_input_queromeusiteagora_insira_seu_email" name="mauticform[insira_seu_email]" value="" class="mauticform-input" placeholder="Seu E-mail" type="email" />
+                        <br>
+                        <span class="mauticform-errormsg" style="display: none;">Por favor, insira um e-mail válido.</span>
+                    </div>
+                    <br>
+                    <button type="submit" name="mauticform[submit]" id="mauticform_input_queromeusiteagora_submit" name="mauticform[submit]" class="btn-pequeno" value="1">Enviar</button>
+
+                    <input type="hidden" name="mauticform[formId]" id="mauticform_queromeusiteagora_id" value="1" />
+                    <input type="hidden" name="mauticform[return]" id="mauticform_queromeusiteagora_return" value="" />
+                    <input type="hidden" name="mauticform[formName]" id="mauticform_queromeusiteagora_name" value="queromeusiteagora" />
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
     <header class="chamada-home">
       <div class="container">
         <img src="img/pearcoffee.png" alt="" />
@@ -53,7 +87,7 @@
         </p>
         <div class="video"></div>
 
-        <button class="btn-grande" style="margin: 420px auto 0 auto;" id="btn-desktop">Quero <span>meu site</span> agora!</button>
+        <a href="#formulario" id="quero-meu-site"><button class="btn-grande" style="margin: 420px auto 0 auto;" id="btn-desktop">Quero <span>meu site</span> agora!</button></a>
       </div>
     </header>
 
@@ -153,7 +187,7 @@
           <div class="col-md-4">
             <div class="row">
               <p><img src="img/sabre.png" width="30px" height="253px" alt="Escolha seu lado" /></p>
-              <button class="btn-grande" style="margin: 50px auto" id="btn-desktop">Quero <span>meu site</span> agora!</button>
+              <a href="#formulario" id="quero-meu-site-2"><button class="btn-grande" style="margin: 50px auto" id="btn-desktop">Quero <span>meu site</span> agora!</button></a>
             </div>
           </div>
 
@@ -182,7 +216,7 @@
     </div>
 
     <div class="chamada-mobile">
-      <button class="btn-grande" style="margin: 50px auto">Quero <span>meu site</span> agora!</button>
+      <a href="#formulario" id="quero-meu-site-3"><button class="btn-grande" style="margin: 50px auto">Quero <span>meu site</span> agora!</button></a>
     </div>
 
     <script src="js/jquery-3.0.0.min.js" type="text/javascript"></script>

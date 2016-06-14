@@ -3,14 +3,24 @@ body{margin: 0; padding: 0; font-family: 'Open Sans', sans-serif;}
 h1{font-weight: 100; font-size: 4em;}
 h2{font-weight: 100; font-size: 3em;}
 h2::after{content: ""; display: block; margin: 10px auto; width: 88px; height: 2px; background: #000; z-index: 100; position: relative;}
-h3{font-weight: 100; font-size: 2em;}
+h3, .mauticform-label{font-weight: 100; font-size: 2em;}
 p{width: 100%; margin: 0 auto; font-size: 1.9em; font-weight: 300;}
 span{font-weight: 700;}
+a, a:hover{text-decoration: none;}
 
 /*Botões*/
 .btn-grande{display: block; max-width: 360px; width: 100%; height: 78px; border: 2px solid #b2cb59; border-radius: 5px; background: transparent; text-align: center; font-size: 23px; color: #b2cb59; -webkit-transition: 0.2s ease; -o-transition: 0.2s ease; transition: 0.2s ease;}
 .btn-grande:hover{background: #b2cb59; color: #fff;}
+.btn-pequeno{display: block; max-width: 300px; width: 100%; height: 50px; border: 2px solid #000; border-radius: 5px; background: transparent; text-align: center; font-size: 23px; color: #000; -webkit-transition: 0.2s ease; -o-transition: 0.2s ease; transition: 0.2s ease; margin: 0 auto;}
+.btn-pequeno:hover{background: #000; color: #fff;}
 .chamada-mobile{display: none;}
+
+#formulario{display: none; background: url('../img/work.jpg') center no-repeat; padding: 10px; color: #000; text-align: center; vertical-align:middle; height: 680px; width: 100%;}
+.mauticform-input{max-width: 600px; width: 100%; height: 50px; border: 2px solid #000; border-radius: 5px; background: transparent; font-size: 2em; text-align: center; margin: 10px; padding-left: 10px;}
+.mauticform-input::-webkit-input-placeholder{color: #000;}
+.mauticform-input::-moz-placeholder{color: #000;}
+.mauticform-input::-ms-input-placeholder{color: #000;}
+.mauticform-errormsg:after{color: #b2cb59; content: " *"; display: inline;}
 
 /*Skils*/
 .skillbar{width: 100%; height: 30px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; position:relative; margin-bottom:30px; background: url('../img/stripe.png') repeat scroll 0 0 #e0e0e0;}
@@ -21,7 +31,7 @@ span{font-weight: 700;}
 .chamada-home{position: relative; background: center url('../img/bg-pearcoffee-oferta.jpg') #fff no-repeat; background-position-y: 57px; height: 800px; text-align: center;}
 .chamada-home img{margin: 30px;}
 .chamada-home p{max-width: 540px; font-size: 1.9em;}
-.chamada-home .video {position: absolute; width: 440px; height: 302px; background: #b2cb59; left: 50%; top: 0; margin: 358px 0 0 -222px;}
+.chamada-home .video{position: absolute; width: 440px; height: 302px; background: #b2cb59; left: 50%; top: 0; margin: 358px 0 0 -222px;}
 
 /*Chamada Destaque*/
 .chamada-destaque{text-align: center; min-height: 450px; margin: 35px 0;}
@@ -34,4 +44,12 @@ span{font-weight: 700;}
 	#btn-desktop{display: none;}
 	.chamada-home{background: #fff !important;}
 	.chamada-mobile{background: #000; padding: 10px; display: block;}
+}
+
+@media screen and (max-width: 536px){
+	.chamada-home .video{left: 50%; margin-top: 80%;}
+}
+
+@media screen and (max-width: 536px){
+	.chamada-home .video{display: none;}
 }
