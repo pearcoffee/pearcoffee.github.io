@@ -32,16 +32,7 @@ $(document).ready(function() {
 	});
 })
 
-var mauticUrl = 'https://williandutras.mautic.net';
-var src = mauticUrl + '/mtracking.gif?page_url=' + encodeURIComponent(window.location.href) + '&page_title=' + encodeURIComponent(document.title);
-var img = document.createElement('img');
-img.style.width  = '1px';
-img.style.height  = '1px';
-img.style.display = 'none';
-img.src = src;
-var body = document.getElementsByTagName('body')[0];
-body.appendChild(img);
-
+    /** This section is only needed once per page if manually copying **/
     if (typeof MauticSDKLoaded == 'undefined') {
         var MauticSDKLoaded = true;
         var head            = document.getElementsByTagName('head')[0];
@@ -52,8 +43,8 @@ body.appendChild(img);
             MauticSDK.onLoad();
         };
         head.appendChild(script);
-        var MauticDomain = 'https://williandutras.mautic.net';
+        var MauticDomain = 'https://pearcoffee.io';
         var MauticLang   = {
-            'submittingMessage': "Por favor aguarde..."
+            'submittingMessage': "Muito obrigado, responderemos o mais breve possível"
         }
     }
