@@ -11,8 +11,8 @@ a, a:hover{text-decoration: none;}
 /*Botões*/
 .btn-grande{display: block; max-width: 360px; width: 100%; height: 78px; border: 2px solid #b2cb59; border-radius: 5px; background: transparent; text-align: center; font-size: 23px; color: #b2cb59; -webkit-transition: 0.2s ease; -o-transition: 0.2s ease; transition: 0.2s ease;}
 .btn-grande:hover{background: #b2cb59; color: #fff;}
-.btn-pequeno{display: block; max-width: 300px; width: 100%; height: 50px; border: 2px solid #000; border-radius: 5px; background: #000; text-align: center; font-size: 23px; color: #fff; -webkit-transition: 0.2s ease; -o-transition: 0.2s ease; transition: 0.2s ease; margin: 0 auto;}
-.btn-pequeno:hover{background: #111; color: #fff;}
+.btn-pequeno{display: block; max-width: 300px; width: 100%; height: 50px; border: 0px; border-radius: 5px; background: #000; text-align: center; font-size: 23px; color: #fff; -webkit-transition: 0.2s ease; -o-transition: 0.2s ease; transition: 0.2s ease; margin: 0 auto;}
+.btn-pequeno:hover{background: #000; color: #fff; border: 2px solid #000;}
 .chamada-mobile{display: none;}
 
 #formulario{display: none; background: url('../img/work.jpg') center no-repeat; padding: 10px; color: #000; text-align: center; vertical-align:middle; height: 680px; width: 100%;}
